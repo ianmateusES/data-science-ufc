@@ -1,0 +1,15 @@
+models,text_representation,f1_score
+GradientBoosting,CountVectorizer,0.47983892884900037
+GradientBoosting,TfidfVectorizer,0.4874918080338476
+KNN,CountVectorizer,0.7590449167503506
+DecisionTree,TfidfVectorizer,0.7706778936369314
+KNN,TfidfVectorizer,0.7915425455489526
+DecisionTree,CountVectorizer,0.794217393911798
+Perceptron,CountVectorizer,0.814710426334489
+Perceptron,TfidfVectorizer,0.8156220198201104
+SVM,CountVectorizer,0.8363902273782076
+SVM,TfidfVectorizer,0.8427422433689951
+MLPClassifier,CountVectorizer,0.8481175296652829
+MLPClassifier,TfidfVectorizer,0.8653851817328566
+RandomForest,CountVectorizer,0.8821390677254938
+RandomForest,TfidfVectorizer,0.8873539197379376

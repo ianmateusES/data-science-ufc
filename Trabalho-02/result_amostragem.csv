@@ -1,0 +1,46 @@
+best_pipeline_model,f1_score
+"Pipeline(steps=[('TfidfVectorizer', TfidfVectorizer()),
+                ('svm', LinearSVC(random_state=42))])",0.6364840616461173
+"Pipeline(steps=[('CountVectorizer', CountVectorizer()),
+                ('svm', LinearSVC(C=0.1, random_state=42))])",0.6314152334045156
+"Pipeline(steps=[('TfidfVectorizer', TfidfVectorizer()),
+                ('mpl',
+                 MLPClassifier(alpha=0.1, hidden_layer_sizes=10, max_iter=1000,
+                               random_state=42, solver='lbfgs'))])",0.6179189573650226
+"Pipeline(steps=[('TfidfVectorizer', TfidfVectorizer()),
+                ('perc', Perceptron(eta0=0.001, max_iter=10, random_state=42))])",0.6165138591549469
+"Pipeline(steps=[('CountVectorizer', CountVectorizer()),
+                ('mpl',
+                 MLPClassifier(alpha=0.01, hidden_layer_sizes=12, max_iter=1000,
+                               random_state=42, solver='lbfgs'))])",0.6153841309178932
+"Pipeline(steps=[('CountVectorizer', CountVectorizer()),
+                ('perc', Perceptron(eta0=0.001, max_iter=10, random_state=42))])",0.6143829368817615
+"Pipeline(steps=[('CountVectorizer', CountVectorizer()),
+                ('dt',
+                 DecisionTreeClassifier(criterion='entropy', max_depth=13,
+                                        random_state=42))])",0.4723577002935733
+"Pipeline(steps=[('CountVectorizer', CountVectorizer()),
+                ('knn',
+                 KNeighborsClassifier(n_neighbors=3, weights='distance'))])",0.4692267910485704
+"Pipeline(steps=[('TfidfVectorizer', TfidfVectorizer()),
+                ('knn', KNeighborsClassifier(weights='distance'))])",0.4412829841931827
+"Pipeline(steps=[('TfidfVectorizer', TfidfVectorizer()),
+                ('dt', DecisionTreeClassifier(max_depth=13, random_state=42))])",0.4362811913755493
+"Pipeline(steps=[('CountVectorizer', CountVectorizer()),
+                ('gb',
+                 GradientBoostingClassifier(min_samples_leaf=0.1,
+                                            min_samples_split=0.1,
+                                            n_estimators=10, random_state=42,
+                                            subsample=0.8))])",0.33383715097016636
+"Pipeline(steps=[('TfidfVectorizer', TfidfVectorizer()),
+                ('gb',
+                 GradientBoostingClassifier(min_samples_leaf=0.1,
+                                            min_samples_split=0.1,
+                                            n_estimators=10, random_state=42,
+                                            subsample=0.8))])",0.3335989908356906
+"Pipeline(steps=[('TfidfVectorizer', TfidfVectorizer()),
+                ('rf',
+                 RandomForestClassifier(max_depth=8, n_estimators=200,
+                                        random_state=42))])",0.25234697572876924
+"Pipeline(steps=[('CountVectorizer', CountVectorizer()),
+                ('rf', RandomForestClassifier(max_depth=8, random_state=42))])",0.2484682826325689
